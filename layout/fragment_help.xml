@@ -1,0 +1,161 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_grad"
+        tools:context=".HelpFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="24dp">
+
+            <TextView
+                android:id="@+id/tvHelpTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="User Manual"
+                android:textColor="@android:color/white"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:background="#44FFFFFF"
+                app:layout_constraintTop_toBottomOf="@id/tvHelpTitle" />
+
+            <TextView
+                android:id="@+id/tvHelpIntro"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Welcome to SecureShastrya. This guide will help you understand how to use the app to secure your digital evidence."
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:lineSpacingExtra="4dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+            <!-- Step 1 -->
+            <TextView
+                android:id="@+id/tvStep1Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="1. Authentication"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvHelpIntro" />
+
+            <TextView
+                android:id="@+id/tvStep1Body"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Register an account with your email and password. You can enable Biometric login from your profile settings for faster, secure access."
+                android:textColor="#CCFFFFFF"
+                android:textSize="15sp"
+                android:lineSpacingExtra="3dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvStep1Title" />
+
+            <!-- Step 2 -->
+            <TextView
+                android:id="@+id/tvStep2Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="2. Capturing Evidence"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvStep1Body" />
+
+            <TextView
+                android:id="@+id/tvStep2Body"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Use the 'Capture' screen to take photos, videos, or audio recordings. The app automatically secures them with AES-256 encryption and records a digital fingerprint in our local blockchain ledger."
+                android:textColor="#CCFFFFFF"
+                android:textSize="15sp"
+                android:lineSpacingExtra="3dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvStep2Title" />
+
+            <!-- Step 3 -->
+            <TextView
+                android:id="@+id/tvStep3Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="3. Evidence Locker"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvStep2Body" />
+
+            <TextView
+                android:id="@+id/tvStep3Body"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Access your 'Locker' to view your saved evidence. Each item is tagged with a GPS location and timestamp. You can verify the integrity of any file to ensure it hasn't been tampered with."
+                android:textColor="#CCFFFFFF"
+                android:textSize="15sp"
+                android:lineSpacingExtra="3dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvStep3Title" />
+
+            <!-- Step 4 -->
+            <TextView
+                android:id="@+id/tvStep4Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="4. Reporting to Cyber Cell"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvStep3Body" />
+
+            <TextView
+                android:id="@+id/tvStep4Body"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="32dp"
+                android:text="If you need to report a crime, use our reporting assistant. It helps you package your encrypted evidence and blockchain proofs for submission to the official cyber cell portals."
+                android:textColor="#CCFFFFFF"
+                android:textSize="15sp"
+                android:lineSpacingExtra="3dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvStep4Title" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>
