@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "843579765950",
+    "project_id": "shastrya-6ebe3",
+    "storage_bucket": "shastrya-6ebe3.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:843579765950:android:b1254b3311ed7b712d5aef",
+        "android_client_info": {
+          "package_name": "com.example.secureshastrya"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "843579765950-b6b7cqbiu81gvb9b2musssbndct98s9r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.secureshastrya",
+            "certificate_hash": "fac82eb6e60b3a8036a93a8df2c181e8806d7c81"
+          }
+        },
+        {
+          "client_id": "843579765950-f7j8k9h6s2sbcco5d7cn4i2cgf7djhae.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzeaX4mMfGbB58W5pc2GyH1C5-J98lYFA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "843579765950-f7j8k9h6s2sbcco5d7cn4i2cgf7djhae.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+
+}
